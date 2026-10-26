@@ -1,0 +1,22 @@
+GUIA DA LOUCURA — V6.2 (atualização conjunta)
+
+Instalação GitHub Pages: extraia o ZIP e envie TODOS os arquivos e pastas para a RAIZ do repositório, substituindo os arquivos anteriores. Preserve a pasta galeria com miniaturas e originais.
+
+Novidades:
+- Sobrevivente: imagem do elenco, Teia de Sangue, vídeo de loop, efeitos de status.
+- Killer: imagem do elenco, Teia de Sangue, efeitos de status e link para enciclopédia.
+- Comece Aqui: questionário, checklist salvo localmente, cenário de decisão.
+- Enciclopédia de assassinos: fichas interativas com pesquisa, filtros, poderes e dicas.
+- Biblioteca de vantagens: catálogo de perks do projeto, com busca e filtros.
+- Redes Sociais: Instagram, Twitch, TikTok e espaço para convite da comunidade.
+- Galeria da Névoa e todas as páginas anteriores preservadas.
+
+PENDÊNCIAS TRANSPARENTES:
+- Fotos individuais oficiais de TODOS os assassinos ainda não foram incorporadas; cartões usam um marcador visual. Não foram inventadas imagens.
+- A Biblioteca de Vantagens aproveita o catálogo existente, não representa ainda todas as centenas de vantagens atuais.
+- Os ícones individuais dos efeitos não foram extraídos da referência pequena; a referência foi ampliada e as fichas textuais foram separadas.
+- Endereços das redes montados a partir do @ informado; verificar antes de divulgar. Convite da comunidade TikTok depende do link real.
+- A enciclopédia reúne um conjunto amplo de personagens conhecidos; conferir lançamentos e mudanças recentes antes de apresentar como elenco completo atualizado.
+- Poderes e vantagens podem mudar em patches; recomenda-se revisão periódica.
+
+Vídeo: loop-andywiitch.mp4 comprimido para aproximadamente 5 MB, adequado ao envio pelo navegador do GitHub.

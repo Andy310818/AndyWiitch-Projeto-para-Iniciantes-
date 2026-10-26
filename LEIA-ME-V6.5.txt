@@ -1,0 +1,14 @@
+GUIA DA LOUCURA V6.5 — ATELIÊ DE BUILDS
+
+NOVIDADES
+- Recortes individuais dos ícones enviados em PERKS DE SURV.rar e PERKS DE KILLER.rar.
+- Ícones separados em icones/survivor/ e icones/killer/.
+- Nova página atelie-de-builds.html: seleção de até 4 vantagens, alternância de lado, busca, salvamento local, carregamento e resumo copiável.
+- Acesso ao ateliê pelas páginas Builds, Vantagens e menu.
+- Catálogo anterior de 60 descrições mantido, sem inventar associação com ícones não identificados.
+
+IMPORTANTE
+As capturas contêm apenas os ícones, sem nomes. A biblioteca visual identifica provisoriamente cada símbolo por número e captura. NÃO são descrições técnicas verificadas nem um mapeamento completo das vantagens atuais. A wiki fornecida bloqueou acesso automatizado nesta sessão.
+
+COMO TESTAR
+Extraia o ZIP e abra index.html ou atelie-de-builds.html. Para publicar, envie todos os arquivos e pastas para a raiz do repositório GitHub Pages, inclusive icones/.

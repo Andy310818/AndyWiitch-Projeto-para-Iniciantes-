@@ -1,0 +1,9 @@
+Guia da Loucura V6.4 — Biblioteca de Vantagens
+
+Atualização incremental sobre V6.3.
+- Catálogo expandido para 60 registros selecionados.
+- Busca sem distinção de acentos, filtros e fichas em janela interativa.
+- Ícones originais locais preservados quando existentes; os demais usam um marcador explícito, sem simular ícones oficiais.
+- Descrições são resumos educativos autorais, não transcrições da wiki.
+- Esta NÃO é a biblioteca completa de todas as perks: ainda requer revisão de patches, fontes de ícones autorizadas e catalogação integral.
+- Faça backup antes de publicar.
