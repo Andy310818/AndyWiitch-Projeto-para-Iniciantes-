@@ -473,3 +473,11 @@ body.creator-page .creator-hero p {color:#f2e8ec !important;text-shadow:0 2px 9p
  .portal-v7 .site-header nav.open{display:flex!important;visibility:visible;opacity:1;z-index:101}
  .portal-v7 .site-header .menu-toggle{display:block;position:relative;z-index:102}
 }
+
+/* V7.0.2 — remove a imagem global da V6 que se sobrepunha ao Portal */
+body.home-page.portal-v7::before,body.home-page.portal-v7::after{content:none!important;display:none!important;background:none!important}
+body.home-page.portal-v7>.fog-bg{display:none!important}
+body.home-page.portal-v7{background:#09070e!important}
+body.home-page.portal-v7 .portal-hero{background:#09070e;isolation:isolate}
+body.home-page.portal-v7 .portal-hero-bg{background:linear-gradient(180deg,rgba(7,6,11,.46) 0%,rgba(8,7,12,.60) 55%,#09070e 100%),linear-gradient(90deg,rgba(6,5,10,.42),transparent 50%,rgba(6,5,10,.4)),url('hero-bg-clean.jpg') center 47%/cover no-repeat!important}
+body.home-page.portal-v7 .portal-path{background:#09070e}
