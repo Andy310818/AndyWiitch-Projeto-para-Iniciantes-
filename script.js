@@ -1,4 +1,3 @@
-const nav=document.querySelector("nav");const menu=document.querySelector(".menu-toggle");if(menu&&nav){menu.addEventListener("click",()=>nav.classList.toggle("open"))}
 const modal=document.querySelector(".modal");const title=document.querySelector("#modal-title");const text=document.querySelector("#modal-text");const link=document.querySelector("#modal-link");
 const guidance={
 "survivor-gen":["No gerador","Mantenha o progresso enquanto houver segurança. Observe o ambiente e tenha uma rota de saída antes de continuar. Se a situação ficar perigosa, priorize uma fuga planejada em vez de permanecer parado." ,"sobrevivente.html#gens"],
@@ -20,15 +19,35 @@ document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",(
 
 
 
-// V6.6: menu acessível, fechamento ao selecionar, tecla Escape e página ativa.
-(function(){
- const header=document.querySelector('.site-header');if(!header)return;
- const nav=header.querySelector('nav'),toggle=header.querySelector('.menu-toggle');if(!nav||!toggle)return;
- if(!nav.id)nav.id='menu-da-nevoa';
- toggle.setAttribute('aria-controls',nav.id);toggle.setAttribute('aria-expanded',nav.classList.contains('open')?'true':'false');
- const close=()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');};
- toggle.addEventListener('click',()=>{toggle.setAttribute('aria-expanded',nav.classList.contains('open')?'true':'false');});
- nav.querySelectorAll('a').forEach(a=>{if(a.classList.contains('active'))a.setAttribute('aria-current','page');a.addEventListener('click',close);});
- document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){close();toggle.focus();}});
- document.addEventListener('click',e=>{if(!header.contains(e.target)&&nav.classList.contains('open'))close();});
+
+// V7.0.1 — navegação confiável, acessível e independente de outras ferramentas.
+(function () {
+  function initNavigation() {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+    const nav = header.querySelector('nav');
+    const toggle = header.querySelector('.menu-toggle');
+    if (!nav || !toggle) return;
+    if (!nav.id) nav.id = 'menu-da-nevoa';
+    toggle.setAttribute('aria-controls', nav.id);
+    function setOpen(open) {
+      nav.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    }
+    setOpen(false);
+    toggle.addEventListener('click', function () { setOpen(!nav.classList.contains('open')); });
+    nav.querySelectorAll('a').forEach(function (a) {
+      if (a.classList.contains('active')) a.setAttribute('aria-current', 'page');
+      a.addEventListener('click', function () { setOpen(false); });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('open')) { setOpen(false); toggle.focus(); }
+    });
+    document.addEventListener('click', function (e) {
+      if (!header.contains(e.target) && nav.classList.contains('open')) setOpen(false);
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initNavigation);
+  else initNavigation();
 })();
